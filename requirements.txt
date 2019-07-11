@@ -3,3 +3,4 @@ requests
 pickle
 urllib
 bs4
+pickle
