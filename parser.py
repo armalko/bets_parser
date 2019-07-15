@@ -14,7 +14,7 @@ SPORT_PHOTO = {
 
 
 def get_time(event):
-    event.replace('мин.', 'м.')
+    event = event.replace('мин.', 'м.')
     if event.find('м.') != -1:
         return event[:event.find('м.') + 2], event[event.find('м.') + 2:].strip()
     else:
