@@ -70,7 +70,13 @@ def post(msg, img):
 
 def post_bet(b, sport):
     final_msg = ''
-
+    
+    if time.time() % 86400 > 74399:
+        final_msg += "Последняя ставка на сегодня. Поздравляем тех, кто поднял с нами) \n"
+        
+    if time.time() % 86400 < 33800:
+        final_msg += "Доброе утро! Начинаем работать, удачи всем. \n"
+        
     if sport == 'football':
         final_msg += '!!! ФУТБОЛ !!! \n'
     elif sport == 'tennis':
