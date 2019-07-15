@@ -102,11 +102,11 @@ if not(os.path.exists('data.pickle')):
 
 j = 0
 while True:
-    '''
+    
     if time.time() % 86400 > 75600 or time.time() % 86400 < 32400:
         print('Good night...')
         time.sleep(43200)
-    '''
+    
     
     football_bets = get_bets('football')
     print('Football bets parsed...')
