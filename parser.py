@@ -143,4 +143,4 @@ while True:
         pickle.dump(posted_bets, file)
 
     j += 1
-    time.sleep(1200)
+    time.sleep(2000)
